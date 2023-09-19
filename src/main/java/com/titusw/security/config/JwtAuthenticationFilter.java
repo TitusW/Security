@@ -61,6 +61,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             }
 //            System.out.println("inside_if" + SecurityContextHolder.getContext().getAuthentication());
         }
+        System.out.println("before_next_request");
         filterChain.doFilter(request, response);
     }
 }
